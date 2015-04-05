@@ -1,0 +1,24 @@
+<resources>
+
+    //Google's strings
+    <string name="app_name">Number2</string>
+    <string name="title_activity_maps">Number2</string>
+
+    //Our strings
+    <string name="button">Add Location</string>//Main Button
+    <string name="search_button">Search</string>
+    <string name="hint">Search for Location</string>//Search Bar
+    <string name="prompt">Choose a type</string>
+    <color name="white">#FFFFFF</color>
+
+    <string-array name="type_array">
+        <item>Fast Food</item>
+        <item>Restaurant</item>
+        <item>Supermarket</item>
+        <item>Hotel</item>
+        <item>School/Park</item>
+        <item>Gas Station</item>
+        <item>Misc.</item>
+    </string-array>
+
+</resources>

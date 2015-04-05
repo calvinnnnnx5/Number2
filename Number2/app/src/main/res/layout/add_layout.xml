@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:layout_weight="134.80"
+        android:background="#ff385458">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Bathroom Location"
+            android:autoText="false"
+            android:textColor="#FFFFFF"
+            android:paddingTop="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            android:gravity = "center"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Name:"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="50dp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textPersonName"
+                    android:hint = "Enter name of venue"
+                    android:ems="10"
+                    android:id="@+id/newRoomName"
+                    android:layout_weight="0.20"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:paddingRight="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.08">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Type:"
+                    android:paddingTop="50dp"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="5dp" />
+
+                <Spinner
+                    android:layout_width="280dp"
+                    android:layout_height="33dp"
+                    android:id="@+id/typeSpinner"
+                    android:spinnerMode="dropdown"
+                    android:entries = "@array/type_array"
+                    android:prompt = "@string/prompt"
+                    android:paddingTop="0dp"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="bottom"
+                    android:paddingRight="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.17"
+                android:weightSum="1"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rating:"
+                    android:paddingTop="35dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center_vertical" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="0.22"
+                    android:paddingTop="20dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <CheckBox
+                    android:layout_width="180dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="top|center"
+                    android:text="Open 24 hours?"
+                    android:id="@+id/always_open"
+                    android:textStyle="bold|italic"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:checked="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/addCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_weight=".5" />
+
+        <Button
+            android:id="@+id/addFinished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_weight=".5" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+Pauley Pavilion,34.0702949,-118.4467667,4,5,false
+Ronald Reagan Medical Center,34.066467,-118.446497,6,3,false
+UCLA Guest House,34.074545,-118.438529,3,5,true
+UCLA Tiverton House,34.063142,-118.442258,3,5,true
+W Los Angeles - Westwood,34.0632607,-118.4411035,3,5,true
+Hilgard House Hotel & Suites,34.063193,-118.441733,3,5,true
+Hotel Bel-Air,34.0866502,-118.4467947,3,5,true
+Straus Stadium,34.0705008,-118.4488954,4,5,false
+Chevron Gas Station,34.063344,-118.448541,5,2,false
+In-N-Out,34.063064,-118.4480258,0,3,false
+Taco Bell,34.0635902,-118.4484177,0,3,false
+Chipotle Mexican Grill,34.0535347,-118.4648805,0,3,false
+Denny's,34.0602923,-118.4430713,1,4,true
+BJ's Restaurant & Brewhouse,34.0629329,-118.4472587,1,4,false
+California Pizza Kitchen,34.0622151,-118.4471997,1,4,false
+Ralph's,34.0636883,-118.4437101,2,4,true
+Whole Foods Market,34.061187,-118.4469341,2,4,false
